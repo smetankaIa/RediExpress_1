@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct RediExpressApp: App {
+    
+    @AppStorage("currentScreen") var currentScreen = 0
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                SplachScreenView()
+//                OnboardingView(onboardingState: $currentScreen)
+            }
         }
     }
 }

@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct SplachScreenView: View {
+    @State private var isActive = false
+    @State private var size = 0.8
+    @State private var opacity = 0.5
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if isActive {
+            withAnimation(.easeOut){
+                OnboardingView(onboardingState: .constant(0))
+            }
+        } else {
+            VStack {
+                VStack {
+                    Image("splash")
+                }.onAppear{
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                        self.isActive = true
+                    }
+                }
+                
+            }
+        }
     }
 }
 

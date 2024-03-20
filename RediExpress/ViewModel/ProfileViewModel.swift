@@ -7,4 +7,9 @@
 
 import SwiftUI
 
-class 
+struct ProfileViewModel: Identifiable {
+    var id: UUID = UUID()
+    var image: String
+    var mainText: String
+    var secondText: String
+}

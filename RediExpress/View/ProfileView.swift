@@ -9,10 +9,27 @@ import SwiftUI
 
 struct ProfileView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+                topBarWithText(text: "Profile")
+            ScrollView {
+                    itemsProfileView(image: "house", mainText: "text", destination: LogInView(), secondText: "text", imageColor: .black, secondTextBool: true)
+                    itemsProfileView(image: "house", mainText: "text", destination: LogInView(), secondText: "text", imageColor: .black, secondTextBool: true)
+                    itemsProfileView(image: "house", mainText: "text", destination: LogInView(), secondText: "text", imageColor: .black, secondTextBool: true)
+                    itemsProfileView(image: "house", mainText: "text", destination: LogInView(), secondText: "text", imageColor: .black, secondTextBool: true)
+                    itemsProfileView(image: "house", mainText: "text", destination: LogInView(), secondText: "text", imageColor: .black, secondTextBool: true)
+                    itemsProfileView(image: "house", mainText: "text", destination: LogInView(), secondText: "text", imageColor: .black, secondTextBool: true)
+                    itemsProfileView(image: "house", mainText: "text", destination: LogInView(), secondText: "text", imageColor: .red, secondTextBool: false)
+                
+                
+                
+            }
+        }.frame(width: .infinity)
+            
     }
 }
 
 #Preview {
-    ProfileView()
+    NavigationStack {
+        ProfileView()
+    }
 }

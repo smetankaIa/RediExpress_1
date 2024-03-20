@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct titleBar: View {
+    var mainText: String
+    var secondarytext: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 5) {
+            HStack {
+                Text(mainText)
+                    .font(.custom("Roboto-Medium", size: 24))
+                    .padding(.trailing, 8.0)
+                Spacer()
+            }
+                Text(secondarytext)
+                    .font(.custom("Roboto-Regular", size: 14))
+                    .foregroundColor(.gray)
+            
+        }.frame(maxWidth: .infinity)
     }
 }
 
 #Preview {
-    titleBar()
+    titleBar(mainText: "Main text", secondarytext: "Secondary text")
 }

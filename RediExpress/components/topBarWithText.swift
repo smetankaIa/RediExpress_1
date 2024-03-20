@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct topBarWithText: View {
+     var text: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            ZStack {
+                Rectangle()
+                    .frame(width: .infinity, height: 98)
+                    .foregroundColor(.white)
+                    .shadow(radius: 10)
+                    .overlay {
+                        Text(text)
+                            .font(.custom("Roboto-Regular", size: 16))
+                            .foregroundColor(.gray)
+                            .padding(.top, 50)
+                    }
+        }.ignoresSafeArea()
     }
 }
 
 #Preview {
-    topBarWithText()
+    topBarWithText(text: "text")
 }

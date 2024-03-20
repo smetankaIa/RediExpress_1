@@ -7,12 +7,27 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+struct ContentView: View {
+    @State private var password = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            SecureField("Enter password", text: $password)
+                .padding()
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .overlay(
+                    Text(String(repeating: "*", count: password.count))
+                        .foregroundColor(.gray)
+                        .padding(.leading, 5),
+                    alignment: .leading
+                )
+        }
     }
 }
 
-#Preview {
-    SwiftUIView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
+

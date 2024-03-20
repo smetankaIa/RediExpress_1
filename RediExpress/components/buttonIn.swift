@@ -7,27 +7,56 @@
 
 import SwiftUI
 
-struct buttonIn: View {
+struct buttonIn <T:View>:   View {
+    var text: String
     var color: Color
-    var action: () -> Void
+    var needDest: Bool
+    var destination: T
+    var navigateBool: Bool
+    @State var isNavigate: Bool = false
      var body: some View {
-         
-        Text("Sign Up")
-            .font(.custom("Roboto-Bold",  size: 16))
-            .foregroundColor(.white)
-            .frame(width: 342,height: 50)
-            .background(color)
-            .cornerRadius(4.69)
-            .padding(0.9)
-            .cornerRadius(4.69)
-            .onTapGesture {
-            action()
-            }
+         VStack {
+             if needDest == false{
+                 NavigationLink {
+                     destination
+                 } label: {
+                     Text(text)
+                         .font(.custom("Roboto-Bold",  size: 16))
+                         .foregroundColor(.white)
+                         .frame(width: 342,height: 50)
+                         .background(color)
+                         .cornerRadius(4.69)
+                         .padding(0.9)
+                         .cornerRadius(4.69)
+                 }
+             } else {
+                 Button {
+                     if navigateBool == true {
+                         isNavigate = true
+                     }
+                 } label: {
+                     Text(text)
+                         .font(.custom("Roboto-Bold",  size: 16))
+                         .foregroundColor(.white)
+                         .frame(width: 342,height: 50)
+                         .background(color)
+                         .cornerRadius(4.69)
+                         .padding(0.9)
+                         .cornerRadius(4.69)
+                 }
+                 NavigationLink(destination: destination, isActive: $isNavigate) {
+                     EmptyView()
+                 }
+             }
+
+
+         }.navigationBarBackButtonHidden()
         }
     }
 
 #Preview {
-    buttonIn(color: .blue) {
-        
+    NavigationStack {
+        buttonIn(text: "Text", color: .blue, needDest: true, destination: SignUpView(), navigateBool: true)
     }
+        
 }

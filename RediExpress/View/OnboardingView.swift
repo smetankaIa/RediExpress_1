@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct OnboardingView: View {
-    @State var onboardingState: Int = 2
+    @Binding var onboardingState: Int 
     let transition: AnyTransition = .asymmetric(
         insertion: .move(edge: .trailing),
         removal: .move(edge: .leading))
     var body: some View {
-        ZStack {
+        VStack {
             switch onboardingState {
             case 0:
                 firstOnboardSection
@@ -24,31 +24,39 @@ struct OnboardingView: View {
             case 2:
                 thirdOnboardSection
                         .transition(transition)
+            case 3:
+                SignUpView()
+                    .transition(transition)
             default:  RoundedRectangle(cornerRadius: 25)
                     .foregroundColor(.green)
                 
             }
-        VStack {
                 Spacer()
-            if onboardingState == 2 {
-                signUpButton
-                signInButton
-            } else {
+            if onboardingState  < 2{
                 bottomButtons
+            } else if onboardingState == 2{
+                buttonIn(text: "Sign Up", color: .blue, needDest: false, destination: SignUpView(), navigateBool: true)
+                  
+                bottomTextSigIn(color: .black, mainText: "Already have an account?", action: {
+                    
+                }, textSign: "Sign In", googleBool: false, destination: LogInView())
+                Spacer()
             }
-        }.padding()
         }
+        
     }
 }
 
 #Preview {
-    OnboardingView()
+    NavigationStack {
+        OnboardingView(onboardingState: .constant(0))
+    }
 }
 //MARK: SECTION
 extension OnboardingView {
     private var bottomButtons: some View {
         HStack(spacing: 142) {
-            Text("Skip")
+            NavigationLink("Skip", destination: SignUpView())
                 .font(.custom("Roboto",  size: 14))
                 .foregroundColor(.blue)
                 .frame(width: 100,height: 50)
@@ -70,35 +78,15 @@ extension OnboardingView {
                 .onTapGesture{
                     handleNextButtonPressed()
                 }
+                .onAppear {
+                    onboardingState = UserDefaults.standard.integer(forKey: "currentScreen")
+                }
+                .onDisappear {
+                    UserDefaults.standard.set(onboardingState, forKey: "currentScreen")
+                }
         }.padding(.bottom)
     }
     
-    private var signUpButton: some View {
-        Text("Sign Up")
-            .font(.custom("Roboto-Bold",  size: 16))
-            .foregroundColor(.white)
-            .frame(width: 342,height: 50)
-            .background(.blue)
-            .cornerRadius(4.69)
-            .padding(0.9)
-            .cornerRadius(4.69)
-            .onTapGesture{
-                
-            }
-        
-    }
-    private var signInButton: some View {
-        HStack {
-            Text("Already have an account?")
-                .font(.custom("Roboto-Regular",  size: 14))
-            Text("Sign In")
-                .font(.custom("Roboto-Medium",  size: 14))
-                .foregroundColor(.blue)
-                .onTapGesture {
-                    <#code#>
-                }
-        }
-    }
     
     private var firstOnboardSection: some View {
         VStack{
@@ -169,7 +157,8 @@ extension OnboardingView {
     }
     func hanleSkipButtonPressed() {
         withAnimation(.spring) {
-            onboardingState = 2
+            onboardingState = 3
         }
     }
+   
 }

@@ -7,18 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		710189AE2BA1B04400CBB542 /* buttonIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189AD2BA1B04400CBB542 /* buttonIn.swift */; };
+		710189B02BA1BC0500CBB542 /* bottomTextSigIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189AF2BA1BC0500CBB542 /* bottomTextSigIn.swift */; };
+		710189B22BA3509C00CBB542 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189B12BA3509C00CBB542 /* LogInView.swift */; };
+		710189B62BA3577000CBB542 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189B52BA3577000CBB542 /* ForgotPasswordView.swift */; };
+		710189B82BA357A400CBB542 /* titleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189B72BA357A400CBB542 /* titleBar.swift */; };
+		710189BA2BA358C400CBB542 /* textFieldBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189B92BA358C400CBB542 /* textFieldBar.swift */; };
+		710189BC2BA58C5900CBB542 /* isValidEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189BB2BA58C5900CBB542 /* isValidEmail.swift */; };
+		710189BE2BA60A6F00CBB542 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189BD2BA60A6F00CBB542 /* CustomTabView.swift */; };
+		710189C02BA9743E00CBB542 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189BF2BA9743E00CBB542 /* OTPView.swift */; };
+		710189C22BA9798F00CBB542 /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189C12BA9798F00CBB542 /* OTPTextField.swift */; };
+		710189C42BA9900300CBB542 /* SetNewPassVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189C32BA9900300CBB542 /* SetNewPassVIew.swift */; };
+		710189C92BA9B4B300CBB542 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 710189C82BA9B4B300CBB542 /* Auth */; };
+		710189CB2BA9B4B300CBB542 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 710189CA2BA9B4B300CBB542 /* Functions */; };
+		710189CD2BA9B4B300CBB542 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 710189CC2BA9B4B300CBB542 /* PostgREST */; };
+		710189CF2BA9B4B300CBB542 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 710189CE2BA9B4B300CBB542 /* Realtime */; };
+		710189D12BA9B4B300CBB542 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 710189D02BA9B4B300CBB542 /* Storage */; };
+		710189D42BA9B4BF00CBB542 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 710189D32BA9B4BF00CBB542 /* Supabase */; };
+		710189D72BA9B4E100CBB542 /* ViewModelUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189D62BA9B4E100CBB542 /* ViewModelUser.swift */; };
+		710189D92BAB064900CBB542 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189D82BAB064900CBB542 /* WalletView.swift */; };
+		710189DB2BAB06C300CBB542 /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189DA2BAB06C300CBB542 /* TrackView.swift */; };
+		710189DD2BAB071100CBB542 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189DC2BAB071000CBB542 /* ProfileView.swift */; };
+		710189E02BAB171A00CBB542 /* topBarWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189DF2BAB171A00CBB542 /* topBarWithText.swift */; };
+		710189E22BAB1CE000CBB542 /* itemsProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189E12BAB1CE000CBB542 /* itemsProfileView.swift */; };
+		710189E42BAB1E6F00CBB542 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189E32BAB1E6F00CBB542 /* ProfileViewModel.swift */; };
+		710189E62BAB270E00CBB542 /* SplachScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710189E52BAB270D00CBB542 /* SplachScreenView.swift */; };
 		71E120C82B9DCF3600E60FB1 /* RediExpressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E120C72B9DCF3600E60FB1 /* RediExpressApp.swift */; };
-		71E120CA2B9DCF3600E60FB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E120C92B9DCF3600E60FB1 /* ContentView.swift */; };
+		71E120CA2B9DCF3600E60FB1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E120C92B9DCF3600E60FB1 /* OnboardingView.swift */; };
 		71E120CC2B9DCF3900E60FB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E120CB2B9DCF3900E60FB1 /* Assets.xcassets */; };
 		71E120CF2B9DCF3900E60FB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E120CE2B9DCF3900E60FB1 /* Preview Assets.xcassets */; };
+		71E120E22B9DD10800E60FB1 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E120D62B9DD10800E60FB1 /* Roboto-Medium.ttf */; };
+		71E120E32B9DD10800E60FB1 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E120D72B9DD10800E60FB1 /* Roboto-Light.ttf */; };
+		71E120E42B9DD10800E60FB1 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E120D82B9DD10800E60FB1 /* Roboto-Regular.ttf */; };
+		71E120E52B9DD10800E60FB1 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E120D92B9DD10800E60FB1 /* Roboto-MediumItalic.ttf */; };
+		71E120E62B9DD10800E60FB1 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E120DA2B9DD10800E60FB1 /* Roboto-ThinItalic.ttf */; };
+		71E120E72B9DD10800E60FB1 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E120DB2B9DD10800E60FB1 /* Roboto-BoldItalic.ttf */; };
+		71E120E82B9DD10800E60FB1 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E120DC2B9DD10800E60FB1 /* Roboto-LightItalic.ttf */; };
+		71E120E92B9DD10800E60FB1 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E120DD2B9DD10800E60FB1 /* Roboto-Italic.ttf */; };
+		71E120EA2B9DD10800E60FB1 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E120DE2B9DD10800E60FB1 /* Roboto-BlackItalic.ttf */; };
+		71E120EB2B9DD10800E60FB1 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E120DF2B9DD10800E60FB1 /* Roboto-Bold.ttf */; };
+		71E120EC2B9DD10800E60FB1 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E120E02B9DD10800E60FB1 /* Roboto-Thin.ttf */; };
+		71E120ED2B9DD10800E60FB1 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71E120E12B9DD10800E60FB1 /* Roboto-Black.ttf */; };
+		71E120F12B9DE00100E60FB1 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E120F02B9DE00100E60FB1 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		710189AD2BA1B04400CBB542 /* buttonIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonIn.swift; sourceTree = "<group>"; };
+		710189AF2BA1BC0500CBB542 /* bottomTextSigIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bottomTextSigIn.swift; sourceTree = "<group>"; };
+		710189B12BA3509C00CBB542 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		710189B52BA3577000CBB542 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		710189B72BA357A400CBB542 /* titleBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = titleBar.swift; sourceTree = "<group>"; };
+		710189B92BA358C400CBB542 /* textFieldBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textFieldBar.swift; sourceTree = "<group>"; };
+		710189BB2BA58C5900CBB542 /* isValidEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isValidEmail.swift; sourceTree = "<group>"; };
+		710189BD2BA60A6F00CBB542 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		710189BF2BA9743E00CBB542 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		710189C12BA9798F00CBB542 /* OTPTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPTextField.swift; sourceTree = "<group>"; };
+		710189C32BA9900300CBB542 /* SetNewPassVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPassVIew.swift; sourceTree = "<group>"; };
+		710189D62BA9B4E100CBB542 /* ViewModelUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelUser.swift; sourceTree = "<group>"; };
+		710189D82BAB064900CBB542 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		710189DA2BAB06C300CBB542 /* TrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
+		710189DC2BAB071000CBB542 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		710189DF2BAB171A00CBB542 /* topBarWithText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topBarWithText.swift; sourceTree = "<group>"; };
+		710189E12BAB1CE000CBB542 /* itemsProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemsProfileView.swift; sourceTree = "<group>"; };
+		710189E32BAB1E6F00CBB542 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		710189E52BAB270D00CBB542 /* SplachScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplachScreenView.swift; sourceTree = "<group>"; };
 		71E120C42B9DCF3600E60FB1 /* RediExpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RediExpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E120C72B9DCF3600E60FB1 /* RediExpressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RediExpressApp.swift; sourceTree = "<group>"; };
-		71E120C92B9DCF3600E60FB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		71E120C92B9DCF3600E60FB1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		71E120CB2B9DCF3900E60FB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71E120CE2B9DCF3900E60FB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		71E120D62B9DD10800E60FB1 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		71E120D72B9DD10800E60FB1 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		71E120D82B9DD10800E60FB1 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		71E120D92B9DD10800E60FB1 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		71E120DA2B9DD10800E60FB1 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		71E120DB2B9DD10800E60FB1 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		71E120DC2B9DD10800E60FB1 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		71E120DD2B9DD10800E60FB1 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		71E120DE2B9DD10800E60FB1 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		71E120DF2B9DD10800E60FB1 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		71E120E02B9DD10800E60FB1 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		71E120E12B9DD10800E60FB1 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		71E120EE2B9DD17C00E60FB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		71E120F02B9DE00100E60FB1 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +97,72 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				710189CD2BA9B4B300CBB542 /* PostgREST in Frameworks */,
+				710189CB2BA9B4B300CBB542 /* Functions in Frameworks */,
+				710189D42BA9B4BF00CBB542 /* Supabase in Frameworks */,
+				710189C92BA9B4B300CBB542 /* Auth in Frameworks */,
+				710189D12BA9B4B300CBB542 /* Storage in Frameworks */,
+				710189CF2BA9B4B300CBB542 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		710189AB2BA1ACE700CBB542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				710189BB2BA58C5900CBB542 /* isValidEmail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		710189AC2BA1B02E00CBB542 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				710189AD2BA1B04400CBB542 /* buttonIn.swift */,
+				710189AF2BA1BC0500CBB542 /* bottomTextSigIn.swift */,
+				710189B72BA357A400CBB542 /* titleBar.swift */,
+				710189B92BA358C400CBB542 /* textFieldBar.swift */,
+				710189C12BA9798F00CBB542 /* OTPTextField.swift */,
+				710189DF2BAB171A00CBB542 /* topBarWithText.swift */,
+				710189E12BAB1CE000CBB542 /* itemsProfileView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		710189D22BA9B4BF00CBB542 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		710189D52BA9B4D000CBB542 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				710189D62BA9B4E100CBB542 /* ViewModelUser.swift */,
+				710189E32BAB1E6F00CBB542 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		710189DE2BAB09B400CBB542 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				710189DA2BAB06C300CBB542 /* TrackView.swift */,
+				710189D82BAB064900CBB542 /* WalletView.swift */,
+				710189DC2BAB071000CBB542 /* ProfileView.swift */,
+			);
+			name = TabView;
+			sourceTree = "<group>";
+		};
 		71E120BB2B9DCF3600E60FB1 = {
 			isa = PBXGroup;
 			children = (
 				71E120C62B9DCF3600E60FB1 /* RediExpress */,
 				71E120C52B9DCF3600E60FB1 /* Products */,
+				710189D22BA9B4BF00CBB542 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +177,13 @@
 		71E120C62B9DCF3600E60FB1 /* RediExpress */ = {
 			isa = PBXGroup;
 			children = (
+				710189D52BA9B4D000CBB542 /* ViewModel */,
+				710189AC2BA1B02E00CBB542 /* components */,
+				710189AB2BA1ACE700CBB542 /* Model */,
+				71E120EF2B9DDFED00E60FB1 /* View */,
+				71E120EE2B9DD17C00E60FB1 /* Info.plist */,
+				71E120D52B9DD10800E60FB1 /* Roboto */,
 				71E120C72B9DCF3600E60FB1 /* RediExpressApp.swift */,
-				71E120C92B9DCF3600E60FB1 /* ContentView.swift */,
 				71E120CB2B9DCF3900E60FB1 /* Assets.xcassets */,
 				71E120CD2B9DCF3900E60FB1 /* Preview Content */,
 			);
@@ -65,6 +196,41 @@
 				71E120CE2B9DCF3900E60FB1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		71E120D52B9DD10800E60FB1 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				71E120D62B9DD10800E60FB1 /* Roboto-Medium.ttf */,
+				71E120D72B9DD10800E60FB1 /* Roboto-Light.ttf */,
+				71E120D82B9DD10800E60FB1 /* Roboto-Regular.ttf */,
+				71E120D92B9DD10800E60FB1 /* Roboto-MediumItalic.ttf */,
+				71E120DA2B9DD10800E60FB1 /* Roboto-ThinItalic.ttf */,
+				71E120DB2B9DD10800E60FB1 /* Roboto-BoldItalic.ttf */,
+				71E120DC2B9DD10800E60FB1 /* Roboto-LightItalic.ttf */,
+				71E120DD2B9DD10800E60FB1 /* Roboto-Italic.ttf */,
+				71E120DE2B9DD10800E60FB1 /* Roboto-BlackItalic.ttf */,
+				71E120DF2B9DD10800E60FB1 /* Roboto-Bold.ttf */,
+				71E120E02B9DD10800E60FB1 /* Roboto-Thin.ttf */,
+				71E120E12B9DD10800E60FB1 /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		71E120EF2B9DDFED00E60FB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				710189E52BAB270D00CBB542 /* SplachScreenView.swift */,
+				71E120C92B9DCF3600E60FB1 /* OnboardingView.swift */,
+				71E120F02B9DE00100E60FB1 /* SignUpView.swift */,
+				710189B12BA3509C00CBB542 /* LogInView.swift */,
+				710189B52BA3577000CBB542 /* ForgotPasswordView.swift */,
+				710189BF2BA9743E00CBB542 /* OTPView.swift */,
+				710189C32BA9900300CBB542 /* SetNewPassVIew.swift */,
+				710189BD2BA60A6F00CBB542 /* CustomTabView.swift */,
+				710189DE2BAB09B400CBB542 /* TabView */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +249,14 @@
 			dependencies = (
 			);
 			name = RediExpress;
+			packageProductDependencies = (
+				710189C82BA9B4B300CBB542 /* Auth */,
+				710189CA2BA9B4B300CBB542 /* Functions */,
+				710189CC2BA9B4B300CBB542 /* PostgREST */,
+				710189CE2BA9B4B300CBB542 /* Realtime */,
+				710189D02BA9B4B300CBB542 /* Storage */,
+				710189D32BA9B4BF00CBB542 /* Supabase */,
+			);
 			productName = RediExpress;
 			productReference = 71E120C42B9DCF3600E60FB1 /* RediExpress.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +285,9 @@
 				Base,
 			);
 			mainGroup = 71E120BB2B9DCF3600E60FB1;
+			packageReferences = (
+				710189C72BA9B4B300CBB542 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = 71E120C52B9DCF3600E60FB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +304,18 @@
 			files = (
 				71E120CF2B9DCF3900E60FB1 /* Preview Assets.xcassets in Resources */,
 				71E120CC2B9DCF3900E60FB1 /* Assets.xcassets in Resources */,
+				71E120EB2B9DD10800E60FB1 /* Roboto-Bold.ttf in Resources */,
+				71E120E72B9DD10800E60FB1 /* Roboto-BoldItalic.ttf in Resources */,
+				71E120E42B9DD10800E60FB1 /* Roboto-Regular.ttf in Resources */,
+				71E120E62B9DD10800E60FB1 /* Roboto-ThinItalic.ttf in Resources */,
+				71E120E82B9DD10800E60FB1 /* Roboto-LightItalic.ttf in Resources */,
+				71E120EA2B9DD10800E60FB1 /* Roboto-BlackItalic.ttf in Resources */,
+				71E120E32B9DD10800E60FB1 /* Roboto-Light.ttf in Resources */,
+				71E120E92B9DD10800E60FB1 /* Roboto-Italic.ttf in Resources */,
+				71E120E52B9DD10800E60FB1 /* Roboto-MediumItalic.ttf in Resources */,
+				71E120ED2B9DD10800E60FB1 /* Roboto-Black.ttf in Resources */,
+				71E120EC2B9DD10800E60FB1 /* Roboto-Thin.ttf in Resources */,
+				71E120E22B9DD10800E60FB1 /* Roboto-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +326,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71E120CA2B9DCF3600E60FB1 /* ContentView.swift in Sources */,
+				710189C22BA9798F00CBB542 /* OTPTextField.swift in Sources */,
+				710189E62BAB270E00CBB542 /* SplachScreenView.swift in Sources */,
+				710189B82BA357A400CBB542 /* titleBar.swift in Sources */,
+				710189B02BA1BC0500CBB542 /* bottomTextSigIn.swift in Sources */,
+				710189C42BA9900300CBB542 /* SetNewPassVIew.swift in Sources */,
+				710189C02BA9743E00CBB542 /* OTPView.swift in Sources */,
+				710189BC2BA58C5900CBB542 /* isValidEmail.swift in Sources */,
+				710189E42BAB1E6F00CBB542 /* ProfileViewModel.swift in Sources */,
+				710189D72BA9B4E100CBB542 /* ViewModelUser.swift in Sources */,
+				710189E02BAB171A00CBB542 /* topBarWithText.swift in Sources */,
+				710189DB2BAB06C300CBB542 /* TrackView.swift in Sources */,
+				710189B62BA3577000CBB542 /* ForgotPasswordView.swift in Sources */,
+				710189B22BA3509C00CBB542 /* LogInView.swift in Sources */,
+				710189E22BAB1CE000CBB542 /* itemsProfileView.swift in Sources */,
+				710189DD2BAB071100CBB542 /* ProfileView.swift in Sources */,
+				710189BE2BA60A6F00CBB542 /* CustomTabView.swift in Sources */,
+				71E120F12B9DE00100E60FB1 /* SignUpView.swift in Sources */,
+				71E120CA2B9DCF3600E60FB1 /* OnboardingView.swift in Sources */,
 				71E120C82B9DCF3600E60FB1 /* RediExpressApp.swift in Sources */,
+				710189BA2BA358C400CBB542 /* textFieldBar.swift in Sources */,
+				710189AE2BA1B04400CBB542 /* buttonIn.swift in Sources */,
+				710189D92BAB064900CBB542 /* WalletView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +484,7 @@
 				DEVELOPMENT_TEAM = 5RFXK7CBJ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RediExpress/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +514,7 @@
 				DEVELOPMENT_TEAM = 5RFXK7CBJ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RediExpress/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +555,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		710189C72BA9B4B300CBB542 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		710189C82BA9B4B300CBB542 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 710189C72BA9B4B300CBB542 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		710189CA2BA9B4B300CBB542 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 710189C72BA9B4B300CBB542 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		710189CC2BA9B4B300CBB542 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 710189C72BA9B4B300CBB542 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		710189CE2BA9B4B300CBB542 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 710189C72BA9B4B300CBB542 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		710189D02BA9B4B300CBB542 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 710189C72BA9B4B300CBB542 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		710189D32BA9B4BF00CBB542 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 710189C72BA9B4B300CBB542 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 71E120BC2B9DCF3600E60FB1 /* Project object */;
 }

@@ -7,12 +7,60 @@
 
 import SwiftUI
 
-struct itemsProfileView: View {
+struct itemsProfileView <T:View>: View {
+    var image: String
+    var mainText: String
+    var destination: T
+    var secondText: String
+    var imageColor: Color
+    var secondTextBool: Bool
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationLink(destination: destination) {
+            ZStack {
+                    Rectangle()
+                        .frame(width: .infinity, height: 62)
+                        .foregroundColor(.white)
+                        .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
+                        .overlay {
+                            HStack {
+                                Image(systemName: image)
+                                    .foregroundColor(imageColor)
+                                VStack {
+                                    HStack {
+                                        Text(mainText)
+                                            .font(.custom("Roboto-Regular", size: 16))
+                                            .foregroundColor(.black)
+                                        Spacer()
+                                    }
+                                    if secondTextBool == true {
+                                        HStack {
+                                            Text(secondText)
+                                                .font(.custom("Roboto-Regular", size: 12))
+                                                .foregroundColor(.secondary)
+                                            Spacer()
+                                        }
+                                    } else {
+                                        EmptyView()
+                                    }
+                                }.frame(width: .infinity)
+                                Image(systemName: "arrow.right")
+                                    .foregroundColor(.black)
+                                    .padding(.leading, 25)
+                                Spacer()
+                            }.padding()
+                            
+                            
+                        }
+                }.padding(.horizontal)
+        }
+    
+        
     }
 }
 
 #Preview {
-    itemsProfileView()
+    
+    NavigationStack {
+        itemsProfileView(image: "house", mainText: "Some Text", destination: LogInView(), secondText: "Some second text ...", imageColor: .black, secondTextBool: true)
+    }
 }
